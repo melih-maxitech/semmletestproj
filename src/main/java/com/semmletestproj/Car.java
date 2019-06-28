@@ -33,9 +33,9 @@ public class Car extends Vehicles {
         return sql;
     }
 
-    @Override
+   @Override
     public int right() {
-        private Map<String, String> spoutMap = new HashMap<String, String>();
+        Map<String, String> spoutMap = new HashMap<String, String>();
         return super.right();
     }
 
