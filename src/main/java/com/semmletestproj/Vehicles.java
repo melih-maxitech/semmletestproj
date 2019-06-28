@@ -16,8 +16,8 @@ public class Vehicles {
         return 3;
     }
 
-    public int left() {
-        return 4;
+    public String left(String userId) {
+        return "4";
     }
 
 }

@@ -22,8 +22,11 @@ public class Car extends Vehicles {
     }
 
     @Override
-    public int left() {
-        return super.left();
+    public String left(String userId) {
+        String userno = userId;
+        String sql = "SELECT * from Users WHERE userId = @0";
+
+        return sql;
     }
 
     @Override
