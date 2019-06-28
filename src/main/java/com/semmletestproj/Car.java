@@ -1,11 +1,15 @@
 package com.semmletestproj;
 
+import java.io.File;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLData;
 import java.sql.SQLInput;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Car extends Vehicles {
 
+    private static final String FILE_SEPARATOR = "-";
     public String name = "Car";
 
     @Override
@@ -31,6 +35,11 @@ public class Car extends Vehicles {
 
     @Override
     public int right() {
+        private Map<String, String> spoutMap = new HashMap<String, String>();
         return super.right();
+    }
+
+    public static File getWorkerDirFromRoot(String logRoot, String id, Integer port) {
+        return new File((logRoot + FILE_SEPARATOR + id + FILE_SEPARATOR + port));
     }
 }
