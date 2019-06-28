@@ -8,8 +8,8 @@ public class Vehicles {
         return 1;
     }
 
-    public int stop() {
-        return 2;
+    public String stop(String userId) {
+        return "2";
     }
 
     public int right() {

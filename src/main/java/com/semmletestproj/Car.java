@@ -1,5 +1,9 @@
 package com.semmletestproj;
 
+import java.sql.DatabaseMetaData;
+import java.sql.SQLData;
+import java.sql.SQLInput;
+
 public class Car extends Vehicles {
 
     public String name = "Car";
@@ -10,8 +14,11 @@ public class Car extends Vehicles {
     }
 
     @Override
-    public int stop() {
-        return super.stop();
+    public String stop(String userId) {
+        String userno = userId;
+        String sql = "SELECT * from Users WHERE userId = @0";
+
+        return sql;
     }
 
     @Override

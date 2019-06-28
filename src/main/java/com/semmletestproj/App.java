@@ -10,6 +10,9 @@ public class App
     {
         System.out.println( "Hello World!" );
 
+        Car c = new Car();
+        c.stop("abc");
+
 
 
     }
