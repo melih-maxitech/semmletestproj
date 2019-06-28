@@ -42,4 +42,12 @@ public class Car extends Vehicles {
     public static File getWorkerDirFromRoot(String logRoot, String id, Integer port) {
         return new File((logRoot + FILE_SEPARATOR + id + FILE_SEPARATOR + port));
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        return "12312312".equals(((String) o).substring(1));
+    }
 }
