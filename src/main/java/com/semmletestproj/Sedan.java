@@ -1,13 +1,10 @@
 package com.semmletestproj;
 
 import java.io.File;
-import java.sql.DatabaseMetaData;
-import java.sql.SQLData;
-import java.sql.SQLInput;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Carr extends Vehicles {
+public class Sedan extends Vehicles {
 
     private static final String FILE_SEPARATOR = "-";
     public String name = "Car";
